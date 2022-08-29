@@ -1,15 +1,12 @@
 ### CURSO DE NODE JS EN PLATZI
 
-1. clase 1, analizando como funciona el eventLoop.
-* Es un proceso con un bucle que gestiona de form asincrona todos los
-procesos de la aplicacion
-* El EventQueue este es la cola de evtnos, es decir el que va tener todo lo 
-que nostors tengamos en nuestro codigo, funciones, request, todo lo que tegamos generara un evento,
-los cuales se estaran eviando uno a uno al EventLoop,para que este los resulva, si el EventLoop los podra
-resolver de forma super rapida en 1 minuto los reslvera y en caso de que no se pueda resolver los enviara 
-ThreadPool.
-* Thread Pool, es aqui donde se empezara a gestionar de forma asincrona todo, es decir que por ejemplo:
-operaciones contra bases de datos, lectura de archivos, todo lo que sean operaciones muy lentas, no estara
-bloqueando el hilo principal, el EventLoop va estar funcionado como si no hubiese pasado nada, ejecutando los eventos que vengan del EventQueue coo si no pasase nada, y cada ---Hilo--- en el ThreadPool se encaraga de gestionar su procesos lentos.
-basicamente el ThreadPool lo que hace es que para cada petion que lellegue levanta un hilo nuevo  en nuestro procesador
-y que ese proceso se jecute y demore lo que temga que demorarse sin interferir en el contesto principal de la palicancion es deicr en los procesos que esten suceciendo en el Event Loop 
+2. clase 2, utlizacion de proccess.env.NOMBRE_ENVIROMENT para leer varaiables de entorno en nuestrapp, mendiante el acceso a el procesos y la utlizacion de env, podemos leer la varaiblesde entorno que tenganmos defiinidas en nuestro sistema
+
+* nodemon => utlizamos nodemon para la falidad de no tener que cvolver a utlizar los ocmandos de ejecutar el archivo a palicativo, cada vez que tengamos un cambio, pues con nodemon podemos colocar a correr la cpliacion con el comando **nodemon nombre** y la aplicacionnestara correindo indepiendiente mente si es un proceso de esqucha de alguna peticion o si la aplicacion solo ejcutara un codigo una unica vez, la aplicacion estara corriendo y cuando realicemos una modificacion en el codigo nodemon la reinicara automaticamente para que carguen los cmabios que hemos realizado. idela para cuando estamos en dev
+* pm2 => nos ofrece algunas ventas similares a nodemon pero con otras muy intersantes para cuando estemos en prd, pues podrmoes monitorias los logs de nuestra app, como las trazas y otras cosas que seran de gran utlidad para nuestro aplicativo cuanod estemos en producion, pero no devemo ulizar en dev porque solo obtendremos problemas dada las tares complejas que nos pofrece esta libreri
+  
+| id | name | mode |  | status | cpu | memory |
+|:---:|:---:|---:|:---:|:---:|:---:|:-----:|
+
+| 0  | nombreapp| fork | 44 | online  | 0% | 33.5mb |
+|---|---|---|---|---|---|-----|
