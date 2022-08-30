@@ -1,36 +1,7 @@
 ### CURSO DE NODE JS EN PLATZI
 
-4. clase 4, **callbackHell soluccion con recursividad**, los callback se pueden desconrotrolar
-si no definimos una tecnica para que esto no pase, se peude descontrolar por competo nuestro 
-asincronismo y llegar hacer codigo spagueti, pero unq manera en lo que lo podemos evitar es utlizando
-la recursividad para hacer el llamado a nuestras funciones asincronicas y saber como manejar
-los callback, en donde ode mos definri cuantas veces necestiamos que se ejecute una funcion asincronica y
-e callback que esta tendra entre cotras coas... tenemos que tener en cuenta que todo el codigo que temgamos escrito y queremos volver a tulizar debe de estar en una funcion
-
-
-***esto es lo que queremos evitar, tener demasidos callback, anidando y anidando***
-````js
-hola('juanpiss', function(nombre){
-    hablarname(()=>{
-            hablarname(()=>{
-                adios(nombre, ()=>{
-                    console.log('terminando proceso');
-                })
-            })
-    });
-    }
-);
-````
-
-***si empleamos la recursividad en una funcion tenemos un codigo mas efeciiente y que se ejutara x numero e veces***
-````js
-function conversacion(nombre, veces, callback) {
-    if(veces > 0){
-        hablarname(()=>{
-            conversacion(nombre, --veces, callback)
-       })
-    } else{
-        adios(nombre, callback);
-    }
-}
-````
+4. clase 5 **promises**, dado que manejar callbacks pude llegar a hacer todo un verdadero infirnos is no los sabesmo controlar, con el fin de evitar esto, se crea una forma de trabajar con asincronia la cual es las **promesas** vienen de los callbacks pero deciden cambiar un concwpto, el concepto principal y ya no es el de ejecutar una funcion despues, si no que es el de tener un estado, puden estar resueltas, no resultas o puden fallar.
+podemos hacer una concatenacion de varias funciones que devulven promesas de una manera muchos mas
+limpia, simulando visaulmente todo este cosigo asincrono que tengamos en consigo sincrono, podeindo
+tener un legibilida muchos mas presisa de que va a psar primero a pesar de ser funciones asincronas.
+tambien en el caso que que ocurra un error podeer controlar con un catch
