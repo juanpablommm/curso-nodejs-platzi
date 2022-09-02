@@ -1,3 +1,7 @@
 ### CURSO DE NODE JS EN PLATZI
 
-1. clase 6, **asyn/await** la sintaxis asyn/wait nos permitira definir de forma explicita que una funcions es asincrona y poder esperar a que esa funcion termine, de esta forma podemos esperar a que la funcion asyncrona se ejecute, y esto a nivel de hilo principal no va a afectar el VentLoop porque este estara escuchando eventos que sean generados por el EventQueue como si nada.
+1. clase 7, ***moduloes globales***, en esta clase solo se trata del analisis de algunos modulos
+globales, tales como *setInterval* ya visto antes para la ejecucion de una funcion durante cada
+x tiempo, el *setTimeout* par jecutar una funcion una unica vez en x tiempo, el *clearInterval*
+para limpiar el interval de alguna funcion que se este ejecutan durante cada x tiempo, la creacion
+de varaibles globales a traves del moduloo *global*, entre otras
