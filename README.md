@@ -1,6 +1,8 @@
 ### CURSO DE NODE JS EN PLATZI
 
-10. clase 10 ***try-catch*** analizando como capturar un error con la sentencia try-catch,
-se analiza desde procesos sincronos a procesos asincronos en donde para estos ultimos
-tenemos que recordar que como el procesos no esta sucediendo en el hilo principal de al 
-aplicacion, en el EventLoop sino que por el contrario estos procesos para una funcion asincrona esta sucediendo en el ThradPool entonces es en el hilo para nuestro proceso asincrono en el que debemos emplear el try-cath para caoturar posibles errores y no solamente en el hilo principal porque de romperse la palicacion no servira de nada la dfinicion de un try-catch en el EventLoop para nuestra funcion asincrona dado que no estaremos controlando el error dentro de Hilo para esa funcion asincrona, es decir dentro de ella.
+1.  clase 11. ***correr-procesos hijos en el sistema***, cada vez que trabajamos cualquier cosa asincrona pues se crea un hilo donde correr cosas, **pues ahora ademas de esos hilos podemos trabjaar con procesos**, sabiendo que un proceso simplemente es algo que se jecuta y termina, pues podemos levantar otros procesos con node, con python, con varaibles del sistema, con script, con lo que nos de la gana basicamente.
+para realizar esto debemos apoyarnos del modulo ***child_process*** eñ cual nos procee dos funciones super importantes que son el **spawn** este nos devulve stream y por otro lado tenemos el **exec** que nos deculve un buffer
+* se usa ***spawn*** cuando se quiere que el proceso hijo devulva datos binarios enormes a Node
+* se usa ***exec*** cuando se quiere que el proceso hijo devulva mensajes de estado simples
+* se usa ***spawn*** cuando se quiere recibir datos desde que el proceso arranca
+* se usa ***exec*** cuando se quiere recibir datos al final del proceso
