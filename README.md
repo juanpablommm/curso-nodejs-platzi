@@ -1,10 +1,6 @@
 ### CURSO DE NODE JS EN PLATZI
 
-9. clase 9, ***analizanodo el uso de la consola para imprimir***
-* console.log()
-* console.info() => este es baciamente el mismo que console.log, pero con la diferencia ya cuando tengamos una palicacion un poco mas de negocio, y necesitemos guradar la infomracion que se muestra por consola, los logs, utlizaremos precisamente console.log, y el console.info solo para cuando queremos simplmente mostrar una informacion de como va el proceso, que codigo estamos ejecutando como para manternos informados, pero esto no seran guardados
-* console.error() => para cuando tengamos un error que querramos mostrar por consola, y este se podra guardar entre los errores en los logs
-* console.warn() => para cuando queramos mostrar un advertencia
-* console.table() => esta es de gran utlidad dado que nos mostrara informacion en forma de tabla, ideal para cuando tengamos arreglos por ejemplo
-* console.group() => este tambien es de gran utlidad dado que nos permitira agrupar los logs, de forma que cuando se muestra por consola , se vera un identado para cada grupo de logs, para este tenemos
-que usar console.group('nombreGrupo') y los logs del grupo estaran dentro, y para finalizar el grupo de logs, tenemo que finalizar con console.groupEnd('mismoNombreGrupo') 
+10. clase 10 ***try-catch*** analizando como capturar un error con la sentencia try-catch,
+se analiza desde procesos sincronos a procesos asincronos en donde para estos ultimos
+tenemos que recordar que como el procesos no esta sucediendo en el hilo principal de al 
+aplicacion, en el EventLoop sino que por el contrario estos procesos para una funcion asincrona esta sucediendo en el ThradPool entonces es en el hilo para nuestro proceso asincrono en el que debemos emplear el try-cath para caoturar posibles errores y no solamente en el hilo principal porque de romperse la palicacion no servira de nada la dfinicion de un try-catch en el EventLoop para nuestra funcion asincrona dado que no estaremos controlando el error dentro de Hilo para esa funcion asincrona, es decir dentro de ella.
