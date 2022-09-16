@@ -1,4 +1,4 @@
 ### CURSO DE NODE JS EN PLATZI
 
-21.clase 21 ***debuger*** para realizar un debugger, devemos arrancar el codigo con 
-la bandera **--inspect** lo cual activara el mode debugger, lo cual abrira un segundo puerto con el inspector donde podemos atacar, podemos inspeccionar de muchas formas pero la mas facil seria con el navegador, donde simplemnte colcamos el nacegador seguido de //:inspect como por ejemplo **chrome://inspect** o pra brave **brave://inspect** y simplmente seleccionamos inspect para dentrar a las herramientas que nos provee el navegador a la hora de inspeccionar nuestro codigo
+22. clase 22, **patron Error firts callbacks** esto nos permite que siempre que tengamos un callback,
+el primer paramtro deberia ser el error, esto porque basicamente es una convencion que se genera pensando en que todo puede fallar, todo ej Javascript pude fallar y tenemos que ser concientes de eso y saber como controlarlo, una forma muy sencilla de poder psar tantos argumentos como nosotros querramos en nuestro callback, pero tener **siempre el error en el mismo sitio es saber que el error siempre debe de ser el primer argumento que se pasa,y otros de los patrones tipicos es tener el callback como ultimo argumento que se pasa, pero esto tendra sus esecciones como por ejemplo en el setinterval o el setTimout, donde el callback sera el primer argumento que se pasa**
