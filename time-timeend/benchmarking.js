@@ -14,7 +14,7 @@ function asincrona() {
         setTimeout(() => {
            console.log('termina el proceso asincrono');
            resolve(); 
-        });
+        } );
     })
     
 }

@@ -1,12 +1,8 @@
 ### CURSO DE NODE JS EN PLATZI
 
-22.  clase 22, **scraping** web scraping es una tecnica usada mediante programas de software para extraer informacion de sitios web, simulando la nevegacion de un humano ya sea utlizando protocolo http o incrustando un navegador en una aplicacion.
-utilizacion de **npm i puppeteer** para hacer scraping desde node js, este lo que hara es levantar un chrome pero sin tener que verlo, sin interfas grafica ni nada, esto funcionara en el servidor lentara el chrome, hara todo lo que tenga que hacerdesde la consola y nos devolvera el resultado.
+224. clase 24. **gulp** esta herramienta nos permitira poder automatizar todos los procesos que tengamos desde
+node js, ya sean procesos de consola, procesos donde tengamos paquetes externos, donde tengamos un proceso hijo, etc, vamos a poder automtaziarlo, conde simplmente escribamos un comando y ahaga todo lo que tenga que hacer...
 
-puppeteer, lo que hara es instalar chromiun.
-
-* **puppeter.launch()** lanzara un navegador pra comenzar a trabajar con el
-* **puppeter.launch().newPage()** abriremos una nueva pagina en el navegador
-* **puppeter.launch().newPage().goto()** idicaremos la url de la pagina que querramos ir
-* **puppeter.launch().newPage().goto().evaluate()** recibira como paramtro un claballck, en el cual
-estaremos dentrando a interactuar con la pagina y su tags
+**npm install gulp gulp-server-liv** instalaremos gulp y un pequeño servidor web que nos va a reflescar todo
+el rato los cambios que hagamos.
+esto por ejemplo de gran utilidad para cuando estemos trabajando con front, ir modificando lo arhivos css, o precompilados de estos, ir modificando los archivos html, y js, e ir viendo los cambios al mismo tiempo.
